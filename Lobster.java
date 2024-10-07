@@ -6,7 +6,7 @@ import greenfoot.*;
  * Version: 6/1/2022 5:48am
  */
 
-public class Crab extends Actor 
+public class Lobster extends Actor 
 {
     private int speed = 5; // Default speed of the Crab
     private int turnSpeed = 5; // Default turn speed of the Crab
@@ -19,19 +19,19 @@ public class Crab extends Actor
 
     private void moveCrab() 
     {
-        if (Greenfoot.isKeyDown("up")) 
+        if (Greenfoot.isKeyDown("w")) 
         { // Move forward
             move(speed);
         }
-        if (Greenfoot.isKeyDown("down")) 
+        if (Greenfoot.isKeyDown("s")) 
         { // Move backward
             move(-speed);
         }
-        if (Greenfoot.isKeyDown("left")) 
+        if (Greenfoot.isKeyDown("a")) 
         { // Turn left
             turn(-turnSpeed);
         }
-        if (Greenfoot.isKeyDown("right")) 
+        if (Greenfoot.isKeyDown("d")) 
         { // Turn right
             turn(turnSpeed);
         }
